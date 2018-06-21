@@ -15,9 +15,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "shortid": "^2.2.8",
-    "txtgen": "^2.2.2",
     "faker": "^4.1.0",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.10",
+    "shortid": "^2.2.8",
+    "txtgen": "^2.2.2"
   }
 }
