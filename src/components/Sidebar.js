@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Sidebar.css';
 
-import User from './User';
+import User from '../containers/User';
 
 const Sidebar = ({contacts}) => (
   <aside className="Sidebar">
