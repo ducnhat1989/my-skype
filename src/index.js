@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import store from './store';
 
 const render = () => {
-  fancyLog();
+  // fancyLog();
   ReactDOM.render(<App />, document.getElementById('root'));
 };
 
