@@ -7,9 +7,10 @@ import _ from 'lodash';
 
 import Header from '../components/Header';
 import Chats from '../containers/Chats';
+import MessageInput from '../containers/MessageInput';
 
 const ChatWindow = ({ activeUserId }) => {
-  const { contacts, messages } = store.getState();
+  const { contacts, messages, typing } = store.getState();
   const activeUser = contacts[activeUserId];
   const activeMsgs = messages[activeUserId];
 
@@ -17,6 +18,7 @@ const ChatWindow = ({ activeUserId }) => {
     <div className="ChatWindow">
       <Header user={activeUser} />
       <Chats messages={_.values(activeMsgs)} />
+      <MessageInput value={typing} />
     </div>
   );
 };
